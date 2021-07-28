@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://djaphar.github.io/tip-calculator-app/)
+- Solution URL: [djaphar.github.io/tip-calculator-app/](https://djaphar.github.io/tip-calculator-app/)
 
 ## My process
 
@@ -48,11 +48,11 @@ I still have a lot to learn especially in javascript and how to navigate through
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/) - This website helps me a lot through my projects.
+- [W3schools.com](https://www.w3schools.com/) - This website helps me a lot through my projects.
 
 
 ## Author
 
-- GitHub - [Add your name here](https://github.com/Djaphar)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Djaphar)
-- Facebook - [@yourusername](https://www.facebook.com/djaphar/)
+- GitHub - [Dardar Djafar](https://github.com/Djaphar)
+- Frontend Mentor - [@Djaphar](https://www.frontendmentor.io/profile/Djaphar)
+- Facebook - [@djaphar](https://www.facebook.com/djaphar/)
