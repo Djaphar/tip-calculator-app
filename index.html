@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--stylesheet -->
+
+  <link rel="stylesheet" href="style.css">
+    <!--Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <script src="script.js" defer></script>  
+</head>
+<body>
+  <div class="logo">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+      
+  <div class="container">
+    <form class="container__left" id="form">
+      <div class="container__input">
+        <h3>Bill</h3>
+        <div class="input__num">
+          <img src="images/icon-dollar.svg" alt="">
+          <input type="number" name="text" id="billNum" step="0.01" placeholder="0">
+        </div>
+      </div>
+      <div class="tips">
+        <h3>Select Tip %</h3>
+        <div class="tip-grid">
+          <div class="tip">5%</div>
+          <div class="tip">10%</div>
+          <div class="tip">15%</div>
+          <div class="tip">25%</div>
+          <div class="tip">50%</div>
+          <input type="number" name="" id="customTip" min="0" max="100" placeholder="Custom">
+        </div>
+      </div>
+      <div class="container__input">
+        <h3>Number of People</h3>
+        <div class="input__num">
+          <img src="images/icon-person.svg" alt="">
+          <input type="number" id="peopleNum" placeholder="0">
+        </div>
+      </div>
+      <button class="submit" type="submit">Submit</button>
+    </form>
+    <div class="container__right">
+      <div class="result">
+        <div class="result__left">
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </div>
+        <p class="result__right" id="amount">
+          $0.00
+        </p>
+      </div>
+      <div class="result">
+        <div class="result__left">
+          <h4>Total</h4>
+          <p>/ person</p>
+        </div>
+        <p class="result__right" id="total">
+          $0.00
+        </p>
+
+      </div>
+      <button class="reset" id="reset">RESET</button>
+
+
+    </div>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+:root{
+    --primary-color: hsl(172, 67%, 45%);
+    --secondary-color: hsl(186, 14%, 43%);
+    --neutral-color: hsl(185, 41%, 84%);
+    --background: hsl(183, 100%, 15%);
+    --primary-font: 'Space Mono', monospace;
+}
+body{
+    background-color: var(--neutral-color);
+    font-family: var(--primary-font);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(119, 136, 153, 0.2);
+    padding: 30px;
+    width:50%;
+    min-width: fit-content;
+    
+}
+
+.container__left{
+    width: 50%;
+    min-width: 300px;
+    height:fit-content;
+    color: var(--secondary-color);
+    padding: 0 30px;
+}
+.container__left h3{
+    font-size: 14px;
+
+}
+.container__right{
+    width:50%;
+    min-width: 300px;
+    background-color: var(--background);
+    border-radius: 10px;
+    color: var(--neutral-color);
+    padding: 30px;
+    text-align: center;
+    height:fit-content;
+}
+@media (max-width: 675px){
+    
+    .container{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+    }
+    .container__left, .container__right{
+        width: 100%;
+    }
+}
+.result{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.result__right{
+    display: flex;
+    font-size: 34px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.result__left{
+    padding: 10px;
+}
+.result__left > h4{
+    font-size: 14px;
+}
+.result__left > p{
+    font-size: 10px;
+    color: var(--secondary-color);
+}
+.reset{
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 50px;
+    color: var(--background);
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: bold;
+    width: 80%;
+    padding: 5px;
+    cursor: pointer;
+}
+.reset:hover{
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+}
+.reset:disabled{
+    background-color: var(--primary-color);
+    color: var(--background);
+    opacity: 0.5;
+    cursor: unset;
+}
+.container__input{
+    margin: 10px 0;
+}
+.input__num{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(185, 41%, 84%, 0.253);
+    padding: 5px;
+}
+.input__num > img{
+    object-fit: contain;
+}
+.input__num > input{
+    outline: none;
+    direction: rtl;
+    border: none;
+    background-color: transparent;
+    color: var(--background);
+    font-size: 24px;
+    font-weight: bold;
+    width: 80%;
+}
+.tips{
+    margin: 30px 0;
+}
+.tip-grid{
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+.tip{
+    background-color: var(--background);
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tip:hover{
+    background-color: var(--primary-color);
+    color: var(--background);
+}
+.selected{
+    background-color: var(--primary-color);
+    color: var(--background);
+}
+.tip-grid > input{
+    border: none;
+    outline: none;
+    background-color: hsla(185, 41%, 84%, 0.253);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--background);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--secondary-color);
+    opacity: 0.7; /* Firefox */
+}
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--secondary-color);
+}
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--secondary-color);
+}
+
+.submit{
+    display: none;
+}
